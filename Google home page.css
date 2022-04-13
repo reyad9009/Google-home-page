@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+/*start header*/
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 1.2rem;
+}
+section header ul li a{
+    text-decoration: none;
+    color: black;
+}
+section header ul button{
+    padding: 0.5rem 0.8rem;
+    border: none;
+    background-color: #4584ef;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+/*end header*/
+/*start min section*/
+section .main{
+    width: 36.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .main .searchbox{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+section .main .searchbox .search{
+    width: 100%;
+    border-radius: 3.75rem;
+    border: 0.0625rem solid #ccc;
+    outline-color: #4584ef;
+    padding: 0.8125rem 3.125rem;
+    font-size: 1rem;
+    box-shadow: 0.0625rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.2), -0.0625rem -0.0625rem 0.3125rem rgba(0, 0, 0, 0.2)  ;
+}
+section .main .searchbox .icon{
+    position: absolute;
+    top: 0;
+    display: flex;
+    padding: 0.7rem 0.9rem;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    width: 100%;
+}
+section .main .searchbox .icon .mic{
+margin-right: 2rem;
+}
+section .main .buttons{
+    margin-top: 1.8rem;
+}
+section .main .buttons button{
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    
+}
+section .main .lang{
+    margin-top: 1.5rem;
+    
+}
+section footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+section footer .footer-section{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.01rem solid rgba(0, 0, 0, 0.5);
+}
+section footer .footer-section ul{
+    list-style: none;
+    display: flex;
+}
+
+section footer .footer-section ul li a{
+    text-decoration: none;
+    margin-right: 3rem;
+}
+/*end min section*//*
+@media(max-width:780px){
+    section footer .footer-section ul{
+        display: block;
+    }
+}*/
+/*mobile viwe*/
+@media(max-width:480px){
+    section{
+        min-height: 56vh;
+    }
+    section header{
+        width:1%;
+    }
+    section header ul{
+        margin-right: 0.5rem;
+    }
+    section .main .google-img{
+        margin-right: 235px;
+        width: 150px
+    }
+}
